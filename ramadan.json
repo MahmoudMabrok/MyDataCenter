@@ -1,123 +1,299 @@
-
-        {
-        "data" : [
-       { "category" : "هموم الشباب" , 
-        "title": "لماذا هذه السلسلة؟",
-        "url": "https://www.youtube.com/watch?v=Q_RKRIhNwUQ&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=1&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أترك المعصية؟",
-        "url": "https://www.youtube.com/watch?v=o8PP5NxefHk&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=2&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أُرضي أبَوَي؟",
-        "url": "https://www.youtube.com/watch?v=zMWU3NoGxe4&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=3&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أجدُ عملاً مناسباً؟",
-        "url": "https://www.youtube.com/watch?v=pRwL77nI2y0&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=4&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف لي بالزواج؟",
-        "url": "https://www.youtube.com/watch?v=q5nYNNFv5fc&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=5&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "ماذا أقرأ لأفهم ديني؟",
-        "url": "https://www.youtube.com/watch?v=asgrdqnTwJo&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=6&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أجمعُ بين الدنيا و الآخرة؟",
-        "url": "https://www.youtube.com/watch?v=EWfn9V1vRms&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=7&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أجمع بين الجِد والهَزل؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=Hj4rdNcRqK0&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=8&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أختار تخصّصي الجامعي؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=x0qEZWyUXpY&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=9&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف يَلِين قلبي؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=UrbEA_088D8&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=10&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أخدم بلدي؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=g6vpGfHY3Ks&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=11&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أُسَيطر على الغضب؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=mE9CrJHi7aA&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=12&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أنجُو من الفِتن؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=8SbOwCRKHuc&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=13&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أُنظِّم وقتي؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=sa3Hdj3g8KY&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=14&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أكتشف مواهبي وأُنَمِّيها؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=IHU-DoTZWL8&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=15&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أصير داعية إلى الإسلام؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=iOjko1VO_HU&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=16&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أختار صاحبي؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=suHCSenQ37M&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=17&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "لمَ لا يستجيب الله دعائي؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=G0wisXopKaQ&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=18&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "ماذا أفعل ليتعافى بلدي وينهض؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=PPg_bSsebDY&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=19&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أضبط شهواتي؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=b5_hzPjqqtc&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=20&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أكتسبُ الأخلاقَ الحميدة؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=k6NfLpY3GEE&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=21&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "علِقت بي عادة سيئة كيف أتخلّص منها؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=Lp85GZpGiJk&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=22&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أصير عاليَ الهمة؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=KGDuhiT7R-0&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=23&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أعتصم من الشيطان وحِيَله؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=nv0Zzh_N1FE&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=24&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أساهم في تحرير فلسطين؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=nDhpO3BDIPk&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=25&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أتعامل مع أجهزة الاتصال وبرامج التواصل؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=95_-0EegFqc&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=26&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أخدُم ديني؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=ggHc-71oUzw&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=27&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "كيف أنال حُسن الخاتمة؟ - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=AysZEoTuHjQ&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=28&pp=iAQB"
-        },
-       { "category" : "هموم الشباب" , 
-        "title": "خاتمة السلسلة - د.محمد خير الشعال",
-        "url": "https://www.youtube.com/watch?v=YvJjPPjSyJ8&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=29&pp=iAQB"
-        }
-        ]
-
-        }
-
+{
+  "data": [
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 1 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=tHvfqbfQuXg&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=1&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 2 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=iQQGgB9nFO0&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=2&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 3 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=bXTxrkTk5EE&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=3&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 4 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=TVSDsp6iWQo&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=4&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 5 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=myoJ8nRW29Y&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=5&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 6 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=tEC_Z_Z2laE&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=6&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 7 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=3Ng_-lqUwyc&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=7&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 8 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=BeWKKN1MGPk&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=8&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 9 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=j4Mp5QR9Z4w&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=9&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 10 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=TT3rwIP2H2M&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=10&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 11 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=WtqX560B8bA&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=11&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 12 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=CyKGUmA7sOs&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=12&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 13 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=mlsE_TRS0ww&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=13&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "هاااام لكل واحد انتكس - كل يوم آية 14 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=PL8L6bQzkPQ&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=14&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 15 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=t6wqbzRYPrU&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=15&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 16 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=cdo9yk4prpA&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=16&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 17 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=TCM7e_eX97o&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=17&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "هاااااام لكل مسلم ومسلمة - كل يوم آية 18 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=QyZud9Eb84Q&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=18&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 19 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=xf-CkzG3j1E&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=19&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 20 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=6_TXsFBX2oI&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=20&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 21 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=d5H1oS6xvL0&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=21&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 22 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=8Q6ZO2VhltU&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=22&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 23 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=-M5dADT_T4U&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=23&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 24 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=YWug_3TmGFU&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=24&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 25 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=TkXj2E1YN0w&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=25&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 26 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=tLz6d6rHXhI&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=26&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 27 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=_jzHxjlYNJc&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=27&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 28 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=wPNFt5Gbq2A&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=28&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 29 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=rpnC8byyLSE&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=29&pp=iAQB"
+    },
+    {
+      "category": "كل يوم آية",
+      "title": "كل يوم آية 30 - محمد الغليظ",
+      "url": "https://www.youtube.com/watch?v=E3LqdmRJKy8&list=PLgqtKVxUxe2qJODDwEX6LA3-euaMbQb7Y&index=30&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "لماذا هذه السلسلة؟",
+      "url": "https://www.youtube.com/watch?v=Q_RKRIhNwUQ&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=1&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أترك المعصية؟",
+      "url": "https://www.youtube.com/watch?v=o8PP5NxefHk&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=2&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أُرضي أبَوَي؟",
+      "url": "https://www.youtube.com/watch?v=zMWU3NoGxe4&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=3&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أجدُ عملاً مناسباً؟",
+      "url": "https://www.youtube.com/watch?v=pRwL77nI2y0&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=4&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف لي بالزواج؟",
+      "url": "https://www.youtube.com/watch?v=q5nYNNFv5fc&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=5&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "ماذا أقرأ لأفهم ديني؟",
+      "url": "https://www.youtube.com/watch?v=asgrdqnTwJo&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=6&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أجمعُ بين الدنيا و الآخرة؟",
+      "url": "https://www.youtube.com/watch?v=EWfn9V1vRms&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=7&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أجمع بين الجِد والهَزل؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=Hj4rdNcRqK0&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=8&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أختار تخصّصي الجامعي؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=x0qEZWyUXpY&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=9&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف يَلِين قلبي؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=UrbEA_088D8&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=10&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أخدم بلدي؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=g6vpGfHY3Ks&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=11&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أُسَيطر على الغضب؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=mE9CrJHi7aA&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=12&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أنجُو من الفِتن؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=8SbOwCRKHuc&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=13&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أُنظِّم وقتي؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=sa3Hdj3g8KY&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=14&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أكتشف مواهبي وأُنَمِّيها؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=IHU-DoTZWL8&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=15&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أصير داعية إلى الإسلام؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=iOjko1VO_HU&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=16&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أختار صاحبي؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=suHCSenQ37M&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=17&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "لمَ لا يستجيب الله دعائي؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=G0wisXopKaQ&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=18&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "ماذا أفعل ليتعافى بلدي وينهض؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=PPg_bSsebDY&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=19&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أضبط شهواتي؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=b5_hzPjqqtc&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=20&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أكتسبُ الأخلاقَ الحميدة؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=k6NfLpY3GEE&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=21&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "علِقت بي عادة سيئة كيف أتخلّص منها؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=Lp85GZpGiJk&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=22&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أصير عاليَ الهمة؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=KGDuhiT7R-0&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=23&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أعتصم من الشيطان وحِيَله؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=nv0Zzh_N1FE&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=24&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أساهم في تحرير فلسطين؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=nDhpO3BDIPk&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=25&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أتعامل مع أجهزة الاتصال وبرامج التواصل؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=95_-0EegFqc&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=26&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أخدُم ديني؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=ggHc-71oUzw&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=27&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "كيف أنال حُسن الخاتمة؟ - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=AysZEoTuHjQ&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=28&pp=iAQB"
+    },
+    {
+      "category": "هموم الشباب",
+      "title": "خاتمة السلسلة - د.محمد خير الشعال",
+      "url": "https://www.youtube.com/watch?v=YvJjPPjSyJ8&list=PLMPqxr1nu2ZfhlCwSs-NM1aD8isu8KFNY&index=29&pp=iAQB"
+    }
+  ]
+}
