@@ -1,22 +1,44 @@
-{   
+{
     "sections": [
+        {
+            "title": "رمضان ٢٥",
+            "categories": [
+                {
+                    "title": "هدى للناس",
+                    "url": "https://img.youtube.com/vi/U_BAOVorAnQ/mqdefault.jpg"
+                }
+            ]
+        },
         {
             "title": "الاستعداد لرمضان",
             "categories": [
-               {
-                "title":  "شهر رمضان | د. أحمد عبد المنعم",
-                "url": "https://img.youtube.com/vi/SL2CdQ1cqKE/mqdefault.jpg"
-               }, 
-               {
-                "title":  "تراتيل رمضان | الشيخ محمد خيري",
-                "url": "https://img.youtube.com/vi/Y58wfzga_Dc/mqdefault.jpg"
-               }, 
-               {
-                "title":  "الشيخ سمير مصطفى (رمضان)",
-                "url": "https://img.youtube.com/vi/cuPKuLxXttA/mqdefault.jpg"
-               }
+                {
+                    "title": "شهر رمضان | د. أحمد عبد المنعم",
+                    "url": "https://img.youtube.com/vi/SL2CdQ1cqKE/mqdefault.jpg"
+                },
+                {
+                    "title": "تراتيل رمضان | الشيخ محمد خيري",
+                    "url": "https://img.youtube.com/vi/Y58wfzga_Dc/mqdefault.jpg"
+                },
+                {
+                    "title": "الشيخ سمير مصطفى (رمضان)",
+                    "url": "https://img.youtube.com/vi/cuPKuLxXttA/mqdefault.jpg"
+                },
+                {
+                    "title": "دورة فقه الصيام للمهندس علاء حامد",
+                    "url": "https://img.youtube.com/vi/ZI8Q2cxozzw/mqdefault.jpg"
+                }
             ]
-        }
+        },
+        {
+            "title": "رمضان ٢٤",
+            "categories": [
+                {
+                    "title": "برنامج آية وحكاية",
+                    "url": "https://img.youtube.com/vi/okufiGEv-mA/mqdefault.jpg"
+                }
+            ]
+        },
     ],
     "items": [
         {
@@ -318,6 +340,236 @@
             "title": "يوم المزيد 18|الشيخ محمد خيري|تراتيل رمضان",
             "url": "https://www.youtube.com/watch?v=fxxA6vLdgk8&list=PLQR5pAkesbk50lGsy6qv-_1uHtr_gSEeG&index=18&pp=iAQB",
             "category": "تراتيل رمضان | الشيخ محمد خيري"
+        },
+        {
+            "title": "دورة فقه الصيام من كتاب الفقه الميسر (الدرس الأول)_أركان الصيام و شروط وجوب صيام رمضان_م/ علاء حامد",
+            "url": "https://www.youtube.com/watch?v=ZI8Q2cxozzw&list=PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd&index=1&pp=iAQB",
+            "category": "دورة فقه الصيام للمهندس علاء حامد"
+        },
+        {
+            "title": "دورة فقه الصيام (الفقه الميسر) (الدرس الثاني)_الأعذار المبيحة للفطر و مفطرات الصائم_م/ علاء حامد",
+            "url": "https://www.youtube.com/watch?v=nJUkjE1KXi0&list=PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd&index=2&pp=iAQB",
+            "category": "دورة فقه الصيام للمهندس علاء حامد"
+        },
+        {
+            "title": "دورة فقه الصيام (الدرس الثالث)_مستحبات و مكروهات الصيام و الصيام المستحب _م/ علاء حامد",
+            "url": "https://www.youtube.com/watch?v=L417QIwdBDQ&list=PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd&index=3&pp=iAQB",
+            "category": "دورة فقه الصيام للمهندس علاء حامد"
+        },
+        {
+            "title": "دورة فقه الصيام (الدرس الرابع)_الصيام المكروه و المحرم و أحكام الاعتكاف _م/ علاء حامد",
+            "url": "https://www.youtube.com/watch?v=aJNopBvAzs0&list=PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd&index=4&pp=iAQB",
+            "category": "دورة فقه الصيام للمهندس علاء حامد"
+        },
+        {
+            "title": "فكرة برنامج هدى للناس | تبسيط القرآن لهداية الناس | د. أحمد عبد المنعم",
+            "url": "https://www.youtube.com/watch?v=U_BAOVorAnQ&list=PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3&index=1&pp=iAQB",
+            "category": "هدى للناس"
+        },
+        {
+            "title": "برنامج آية وحكاية | تلك الدار الأخرة | الشيخ مشاري العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=okufiGEv-mA&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=1&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | فاذكروني أذكركم | الشيخ مشاري العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=RwHS9ercNHY&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=2&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |وكلهم آتيه يوم القيامة فردا| الشيخ مشاري العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=2XLWbezkoaA&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=3&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | قل يا عبادي الذين أسرفوا على أنفسهم| الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=1tcneCB2Q0Q&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=4&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | لقد جاءكم رسول من أنفسكم | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=Cbcqpgwjva0&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=5&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | إنما يخشى الله من عباده العلماء | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=qqoiG0R31JE&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=6&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | إياك نعبد وإياك نستعين | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=sRFg2Kd1-Zs&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=7&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | فلا تزكوا أنفسكم هو أعلم بمن إتقى | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=mtLsreCRfl0&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=8&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | آية الكرسي| الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=ntsAFcFi1NY&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=9&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | كل من عليها فان | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=IGJRO8cWyoY&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=10&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |ما يلفظ من قول إلا لديه رقيب عتيد | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=UmsdzSXfgFY&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=11&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |إن في ذلك لذكرى لمن كان له قلب| الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=OszEl27GyVc&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=12&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |فاستقم كما أمرت| الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=foXBXMeyT6w&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=13&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |الذين إذا أصابتهم مصيبة|| الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=dW2-V01cRHQ&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=14&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | وما أمروا إلا ليعبدوا الله مخلصين | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=0f41U1_eGYc&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=15&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | قل يا عبادي الذين أسرفوا على أنفسهم| الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=1tcneCB2Q0Q&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=16&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |وكلهم آتيه يوم القيامة فردا| الشيخ مشاري العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=2XLWbezkoaA&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=17&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | من عمل صالحا من ذكر أو أنثى | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=6nYoT87CX9o&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=18&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | فقلت استغفروا ربكم إنه كان غفارا | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=7jk-BILD3J0&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=19&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |ويحذركم الله نفسه || الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=956sUyt8EZs&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=20&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | لقد جاءكم رسول من أنفسكم | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=Cbcqpgwjva0&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=21&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |ألم يأن للذين آمنوا أن تخشع قلوبهم لذكر الله || الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=G8LNqCzv2gU&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=22&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | كل من عليها فان | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=IGJRO8cWyoY&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=23&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | شهر رمضان الذي أنزل فيه القرآن | الشيخ مشاري العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=LEKxsJBh5Qw&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=24&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |إن في ذلك لذكرى لمن كان له قلب| الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=OszEl27GyVc&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=25&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | فاذكروني أذكركم | الشيخ مشاري العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=RwHS9ercNHY&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=26&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |أن يكون لهم الخيرة || الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=SPlVao3B1dM&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=27&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |ما يلفظ من قول إلا لديه رقيب عتيد | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=UmsdzSXfgFY&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=28&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | وعاشروهن بالمعروف | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=_w3m1Ny_8qg&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=29&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |واستعينوا بالصبر والصلاة || الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=cxDFXpaT0pk&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=30&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |الذين إذا أصابتهم مصيبة|| الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=dW2-V01cRHQ&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=31&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |فاستقم كما أمرت| الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=foXBXMeyT6w&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=32&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | فلا تزكوا أنفسكم هو أعلم بمن إتقى | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=mtLsreCRfl0&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=33&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | آية الكرسي| الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=ntsAFcFi1NY&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=34&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |ونزلنا عليك الكتاب تبياناً لكل شئ || الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=oDLhOR2rhbg&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=35&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | تلك الدار الأخرة | الشيخ مشاري العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=okufiGEv-mA&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=36&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | إنما يخشى الله من عباده العلماء | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=qqoiG0R31JE&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=37&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | إياك نعبد وإياك نستعين | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=sRFg2Kd1-Zs&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=38&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | وألف بين قلوبهم | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=tC7ICL7GjHE&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=39&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية |وما أرسلناك إلا رحمة للعالمين| الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=vDJh_HwUhWc&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=40&pp=iAQB",
+            "category": "برنامج آية وحكاية"
+        },
+        {
+            "title": "برنامج آية وحكاية | وإنه لذكر لك ولقومك | الشيخ العفاسي والشيخ سعيد الكملي",
+            "url": "https://www.youtube.com/watch?v=w2rMdoeaA8E&list=PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt&index=41&pp=iAQB",
+            "category": "برنامج آية وحكاية"
         }
     ]
 }
