@@ -1,0 +1,21 @@
+{
+  "playlist_title": "عالمغرب ٢",
+  "playlist_id": "PLlXQj2VGUTmfOrpzgytlcIlu38pQWh4UJ",
+  "playlist_url": "https://www.youtube.com/playlist?list=PLlXQj2VGUTmfOrpzgytlcIlu38pQWh4UJ",
+  "video_count": 2,
+  "last_updated": "2025-03-01 23:21:48 UTC",
+  "videos": [
+    {
+      "title": "",
+      "url": "https://www.youtube.com/watch?v=X0D1DyvYfSM",
+      "thumbnail": "https://i.ytimg.com/vi/X0D1DyvYfSM/maxresdefault.jpg",
+      "video_id": "X0D1DyvYfSM"
+    },
+    {
+      "title": "",
+      "url": "https://www.youtube.com/watch?v=tKSR3DC6Vqw",
+      "thumbnail": "https://i.ytimg.com/vi/tKSR3DC6Vqw/maxresdefault.jpg",
+      "video_id": "tKSR3DC6Vqw"
+    }
+  ]
+}
