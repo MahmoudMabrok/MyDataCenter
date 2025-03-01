@@ -6,7 +6,7 @@ import requests
 from pytube import Playlist, YouTube
 
 # Function to extract video information manually to avoid pytube's title issues
-def get_video_info(video_id):
+def get_video_info(video_id, playlist_title):
     try:
         # Use requests to get the video page
         response = requests.get(f"https://www.youtube.com/watch?v={video_id}")
@@ -27,7 +27,8 @@ def get_video_info(video_id):
             'title': f"Video {video_id}",
             'url': f'https://www.youtube.com/watch?v={video_id}',
             'thumbnail': f'https://i.ytimg.com/vi/{video_id}/mqdefault.jpg',
-            'video_id': video_id
+            'video_id': video_id,
+            'category': playlist_title
         }
 
 # List of playlist URLs to scrape
@@ -54,15 +55,9 @@ playlists = [
 output_dir = 'playlists'
 os.makedirs(output_dir, exist_ok=True)
 
-for playlist_url in playlists:
+for playlist_id in playlists:
     try:
-        # Extract playlist ID from URL
-        playlist_id_match = re.search(r'list=([\w-]+)', playlist_url)
-        if not playlist_id_match:
-            print(f'Could not extract playlist ID from {playlist_url}')
-            continue
-            
-        playlist_id = playlist_id_match.group(1)
+        playlist_url= f'https://www.youtube.com/playlist?list={playlist_id}'
         output_file = f'{output_dir}/{playlist_id}.json'
         
         # Get playlist and its videos
@@ -95,7 +90,7 @@ for playlist_url in playlists:
                 video_id = video_id_match.group(1)
                 
                 # Get video info
-                video_data = get_video_info(video_id)
+                video_data = get_video_info(video_id, playlist_title)
                 videos.append(video_data)
                 print(f'Added video: {video_data["title"]}')
                 
