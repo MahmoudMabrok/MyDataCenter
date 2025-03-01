@@ -29,8 +29,7 @@ jobs:
       - name: Check for changes
         id: git-check
         run: |
-          git status
-          git diff --exit-code --quiet playlists/ || echo "changes=true" >> $GITHUB_OUTPUT
+          echo "changes=true" >> $GITHUB_OUTPUT
       
       - name: Commit and push if there are changes
         if: steps.git-check.outputs.changes == 'true'
