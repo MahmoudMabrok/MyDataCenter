@@ -6,8 +6,7 @@ from pytube import Playlist
 
 # List of playlist URLs to scrape
 playlists = [
-    'https://www.youtube.com/playlist?list=PLAYLIST_ID_1',
-    'https://www.youtube.com/playlist?list=PLAYLIST_ID_2'
+    'https://www.youtube.com/playlist?list=PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3',
     # Add more playlists as needed
 ]
 
