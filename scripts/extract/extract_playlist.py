@@ -101,7 +101,7 @@ for playlist_id in playlists:
         extract_playlist(playlist_id)
         
     except Exception as e:
-        print(f'Error scraping playlist {playlist_url}: {str(e)}')
+        print(f'Error scraping playlist {playlist_id}: {str(e)}')
 
 # Create an index file with all playlist IDs and titles
 print(f'Successfully completed scraping process')        
