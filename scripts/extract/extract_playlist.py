@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import time
 
@@ -10,12 +11,18 @@ chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 
+# Specify the path to the Chromium binary
+chrome_options.binary_location = "/usr/bin/chromium-browser"
+
+# Set up ChromeDriver service
+service = Service("/usr/lib/chromium-browser/chromedriver")
+
 # Initialize the WebDriver
-driver = webdriver.Chrome(options=chrome_options)
+driver = webdriver.Chrome(service=service, options=chrome_options)
 
 try:
     # Open the YouTube playlist URL
-    playlist_url = "https://www.youtube.com/playlist?list=PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3"
+    playlist_url = "https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID"
     driver.get(playlist_url)
 
     # Wait for the page to load
