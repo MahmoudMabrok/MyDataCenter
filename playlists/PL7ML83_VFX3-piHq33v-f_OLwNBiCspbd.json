@@ -1,45 +1,34 @@
-{
-  "playlist_title": "دورة فقه الصيام للمهندس علاء حامد",
-  "playlist_id": "PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd",
-  "playlist_url": "https://www.youtube.com/playlist?list=PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd",
-  "video_count": 6,
-  "last_updated": "2025-03-02 01:57:50 UTC",
-  "videos": [
+[
     {
-      "title": "",
-      "url": "https://www.youtube.com/watch?v=ZI8Q2cxozzw",
-      "thumbnail": "https://i.ytimg.com/vi/ZI8Q2cxozzw/maxresdefault.jpg",
-      "video_id": "ZI8Q2cxozzw"
+        "title": "دورة فقه الصيام من كتاب الفقه الميسر (الدرس الأول)_أركان الصيام و شروط وجوب صيام رمضان_م/ علاء حامد",
+        "url": "https://www.youtube.com/watch?v=ZI8Q2cxozzw&list=PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd&index=1&pp=iAQB",
+        "category": "دورة فقه الصيام للمهندس علاء حامد",
+        "videoId": "ZI8Q2cxozzw",
+        "thumbnail": "https://img.youtube.com/vi/ZI8Q2cxozzw/mqdefault.jpg",
+        "playlist_id": "PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd"
     },
     {
-      "title": "",
-      "url": "https://www.youtube.com/watch?v=nJUkjE1KXi0",
-      "thumbnail": "https://i.ytimg.com/vi/nJUkjE1KXi0/maxresdefault.jpg",
-      "video_id": "nJUkjE1KXi0"
+        "title": "دورة فقه الصيام (الفقه الميسر) (الدرس الثاني)_الأعذار المبيحة للفطر و مفطرات الصائم_م/ علاء حامد",
+        "url": "https://www.youtube.com/watch?v=nJUkjE1KXi0&list=PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd&index=2&pp=iAQB",
+        "category": "دورة فقه الصيام للمهندس علاء حامد",
+        "videoId": "nJUkjE1KXi0",
+        "thumbnail": "https://img.youtube.com/vi/nJUkjE1KXi0/mqdefault.jpg",
+        "playlist_id": "PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd"
     },
     {
-      "title": "",
-      "url": "https://www.youtube.com/watch?v=L417QIwdBDQ",
-      "thumbnail": "https://i.ytimg.com/vi/L417QIwdBDQ/maxresdefault.jpg",
-      "video_id": "L417QIwdBDQ"
+        "title": "دورة فقه الصيام (الدرس الثالث)_مستحبات و مكروهات الصيام و الصيام المستحب _م/ علاء حامد",
+        "url": "https://www.youtube.com/watch?v=L417QIwdBDQ&list=PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd&index=3&pp=iAQB",
+        "category": "دورة فقه الصيام للمهندس علاء حامد",
+        "videoId": "L417QIwdBDQ",
+        "thumbnail": "https://img.youtube.com/vi/L417QIwdBDQ/mqdefault.jpg",
+        "playlist_id": "PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd"
     },
     {
-      "title": "",
-      "url": "https://www.youtube.com/watch?v=aJNopBvAzs0",
-      "thumbnail": "https://i.ytimg.com/vi/aJNopBvAzs0/maxresdefault.jpg",
-      "video_id": "aJNopBvAzs0"
-    },
-    {
-      "title": "",
-      "url": "https://www.youtube.com/watch?v=acmVnLkf-jY",
-      "thumbnail": "https://i.ytimg.com/vi/acmVnLkf-jY/maxresdefault.jpg",
-      "video_id": "acmVnLkf-jY"
-    },
-    {
-      "title": "",
-      "url": "https://www.youtube.com/watch?v=beHmub37UX8",
-      "thumbnail": "https://i.ytimg.com/vi/beHmub37UX8/maxresdefault.jpg",
-      "video_id": "beHmub37UX8"
+        "title": "دورة فقه الصيام (الدرس الرابع)_الصيام المكروه و المحرم و أحكام الاعتكاف _م/ علاء حامد",
+        "url": "https://www.youtube.com/watch?v=aJNopBvAzs0&list=PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd&index=4&pp=iAQB",
+        "category": "دورة فقه الصيام للمهندس علاء حامد",
+        "videoId": "aJNopBvAzs0",
+        "thumbnail": "https://img.youtube.com/vi/aJNopBvAzs0/mqdefault.jpg",
+        "playlist_id": "PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd"
     }
-  ]
-}
+]

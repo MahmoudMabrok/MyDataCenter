@@ -1,33 +1,30 @@
-{
-  "playlist_title": "تدبر قرآن التراويح",
-  "playlist_id": "PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg",
-  "playlist_url": "https://www.youtube.com/playlist?list=PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg",
-  "video_count": 4,
-  "last_updated": "2025-03-02 01:54:12 UTC",
-  "videos": [
-    {
-      "title": "",
-      "url": "https://www.youtube.com/watch?v=tz1d7e3E5gc",
-      "thumbnail": "https://i.ytimg.com/vi/tz1d7e3E5gc/maxresdefault.jpg",
-      "video_id": "tz1d7e3E5gc"
-    },
-    {
-      "title": "",
-      "url": "https://www.youtube.com/watch?v=p3RizRtL9Vc",
-      "thumbnail": "https://i.ytimg.com/vi/p3RizRtL9Vc/maxresdefault.jpg",
-      "video_id": "p3RizRtL9Vc"
-    },
-    {
-      "title": "",
-      "url": "https://www.youtube.com/watch?v=-acnblFUqEo",
-      "thumbnail": "https://i.ytimg.com/vi/-acnblFUqEo/maxresdefault.jpg",
-      "video_id": "-acnblFUqEo"
-    },
-    {
-      "title": "",
-      "url": "https://www.youtube.com/watch?v=e9ZSLPCINug",
-      "thumbnail": "https://i.ytimg.com/vi/e9ZSLPCINug/maxresdefault.jpg",
-      "video_id": "e9ZSLPCINug"
-    }
-  ]
-}
+[
+  {
+    "title": "تدبر قرآن التراويح - الجزء الأول",
+    "url": "https://www.youtube.com/watch?v=tz1d7e3E5gc",
+    "thumbnail": "https://i.ytimg.com/vi/tz1d7e3E5gc/mqdefault.jpg",
+    "video_id": "tz1d7e3E5gc",
+    "playlist_id": "PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg"
+  },
+  {
+    "title": "تدبر قرآن التراويح - الجزء الثاني",
+    "url": "https://www.youtube.com/watch?v=p3RizRtL9Vc",
+    "thumbnail": "https://i.ytimg.com/vi/p3RizRtL9Vc/mqdefault.jpg",
+    "video_id": "p3RizRtL9Vc",
+    "playlist_id": "PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg"
+  },
+  {
+    "title": "تدبر قرآن التراويح - الجزء الثالث",
+    "url": "https://www.youtube.com/watch?v=-acnblFUqEo",
+    "thumbnail": "https://i.ytimg.com/vi/-acnblFUqEo/mqdefault.jpg",
+    "video_id": "-acnblFUqEo",
+    "playlist_id": "PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg"
+  },
+  {
+    "title": "الفرق بين الآيتين ٤٨ و١٢٣من سورة البقرة ، دقيقتان من الحلقة الأولى من تدبر قرآن التراويح",
+    "url": "https://www.youtube.com/watch?v=e9ZSLPCINug",
+    "thumbnail": "https://i.ytimg.com/vi/e9ZSLPCINug/mqdefault.jpg",
+    "video_id": "e9ZSLPCINug",
+    "playlist_id": "PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg"
+  }
+]

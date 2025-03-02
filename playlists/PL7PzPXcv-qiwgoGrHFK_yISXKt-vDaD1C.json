@@ -1,15 +1,9 @@
-{
-  "playlist_title": "برنامج \"لا إله إلا الله\" رمضان 2025",
-  "playlist_id": "PL7PzPXcv-qiwgoGrHFK_yISXKt-vDaD1C",
-  "playlist_url": "https://www.youtube.com/playlist?list=PL7PzPXcv-qiwgoGrHFK_yISXKt-vDaD1C",
-  "video_count": 1,
-  "last_updated": "2025-03-02 01:54:06 UTC",
-  "videos": [
-    {
-      "title": "",
-      "url": "https://www.youtube.com/watch?v=k6FuXSHS5kk",
-      "thumbnail": "https://i.ytimg.com/vi/k6FuXSHS5kk/maxresdefault.jpg",
-      "video_id": "k6FuXSHS5kk"
-    }
-  ]
-}
+[
+  {
+    "title": "برنامج لا إله إلا الله (1) | أتباع الهوى",
+    "url": "https://www.youtube.com/watch?v=k6FuXSHS5kk",
+    "thumbnail": "https://i.ytimg.com/vi/k6FuXSHS5kk/mqdefault.jpg",
+    "video_id": "k6FuXSHS5kk",
+    "playlist_id": "PL7PzPXcv-qiwgoGrHFK_yISXKt-vDaD1C"
+  }
+]
