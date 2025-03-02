@@ -44,7 +44,9 @@ jobs:
             ${{ runner.os }}-chromedriver-
 
       - name: Run Selenium script
+        shell: bash
         run: |
+          which chromedriver
           python scripts/extract/extract_playlist.py
 
       - name: update count of videos & playlist
