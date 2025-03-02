@@ -3,6 +3,10 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 import time
+import os
+import json
+import re
+
 
 # Set up Chrome options for headless mode
 chrome_options = Options()
@@ -20,39 +24,84 @@ service = Service("/usr/lib/chromium-browser/chromedriver")
 # Initialize the WebDriver
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
-try:
-    # Open the YouTube playlist URL
-    playlist_url = "https://www.youtube.com/playlist?list=PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3"
-    driver.get(playlist_url)
+playlists = [
+    'PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3',
+    'PLlXQj2VGUTmfOrpzgytlcIlu38pQWh4UJ',
+    'PL7PzPXcv-qiwgoGrHFK_yISXKt-vDaD1C',
+    'PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg',
+]
 
-    print("Page loaded successfully")
+output_dir = 'playlists'
+os.makedirs(output_dir, exist_ok=True)
 
-    # Wait for the page to load
-    time.sleep(5)  # Adjust the sleep time as needed
 
-    # Scroll to load all videos in the playlist
-    last_height = driver.execute_script("return document.documentElement.scrollHeight")
-    while True:
-        driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);")
-        time.sleep(2)  # Adjust the sleep time as needed
-        new_height = driver.execute_script("return document.documentElement.scrollHeight")
-        if new_height == last_height:
-            break
-        last_height = new_height
+def extract_playlist(playlist_id):
+    try:
+        # Open the YouTube playlist URL
+        playlist_url= f'https://www.youtube.com/playlist?list={playlist_id}'
+        driver.get(playlist_url)
 
-    print("All videos loaded")  
-    # Extract video titles and links
-    video_elements = driver.find_elements(By.CSS_SELECTOR, "a.yt-simple-endpoint.style-scope.ytd-playlist-video-renderer")
+        output_file = f'{output_dir}/{playlist_id}.json'
 
-    print("All videos loaded 2")  
+        print("Page loaded successfully")
 
-    for video in video_elements:
-        title = video.get_attribute("title")
-        link = video.get_attribute("href")
-        print(f"Title: {title}")
-        print(f"Link: {link}")
-        print("-" * 40)
+        # Wait for the page to load
+        time.sleep(5)  # Adjust the sleep time as needed
 
-finally:
-    # Close the browser
-    driver.quit()
+        # Scroll to load all videos in the playlist
+        last_height = driver.execute_script("return document.documentElement.scrollHeight")
+        while True:
+            driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);")
+            time.sleep(2)  # Adjust the sleep time as needed
+            new_height = driver.execute_script("return document.documentElement.scrollHeight")
+            if new_height == last_height:
+                break
+            last_height = new_height
+
+        print("All videos loaded")  
+
+        # Extract video titles and links
+        video_elements = driver.find_elements(By.CSS_SELECTOR, "a.yt-simple-endpoint.style-scope.ytd-playlist-video-renderer")
+
+        print("All videos loaded 2")  
+        videos = []
+
+        for video in video_elements:
+            title = video.get_attribute("title")
+            link = video.get_attribute("href")
+            
+            video_id_match = re.search(r'v=([\w-]+)', link)
+            if not video_id_match:
+                print(f'Could not extract video ID from {link}')
+                continue
+                
+            video_id = video_id_match.group(1)
+
+            videos.append(
+                {
+            'title': title,
+            'url': f'https://www.youtube.com/watch?v={video_id}',
+            'thumbnail': f'https://i.ytimg.com/vi/{video_id}/mqdefault.jpg',
+            'video_id': video_id,
+            'playlist_id': playlist_id
+              }
+            )
+
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(videos, f, ensure_ascii=False, indent=2)    
+            
+
+    finally:
+        # Close the browser
+        driver.quit()
+
+
+for playlist_id in playlists:
+    try:
+        extract_playlist(playlist_id)
+        
+    except Exception as e:
+        print(f'Error scraping playlist {playlist_url}: {str(e)}')
+
+# Create an index file with all playlist IDs and titles
+print(f'Successfully completed scraping process')        
