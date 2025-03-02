@@ -66,21 +66,9 @@ def get_video_info(video_id, playlist_id):
 # List of playlist URLs to scrape
 playlists = [
     'PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3',
-    # 'PLlXQj2VGUTmfOrpzgytlcIlu38pQWh4UJ',
-    # 'PL7PzPXcv-qiwgoGrHFK_yISXKt-vDaD1C',
-    # 'PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg',
-    # # Add more playlists as needed
-    # 'PLnV8MkoYSPJDmJqmDAxfjd0Vqo7OnvztU',
-    # 'PLq2oPZxNIlYSlxJ6eklTzCkvhdhyQKPBU',
-    # 'PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3',
-    # 'PLQR5pAkesbk50lGsy6qv-_1uHtr_gSEeG',
-    # 'PLnpYU8_AiEPfvH4J5i52AjkIudjhOcTdL',
-    # 'PLnpYU8_AiEPfDgV7O_cvduDPZNH8pJb7n',
-    # 'PLnpYU8_AiEPfm_OivXkTXUrF8Pp7ptKEk',
-    # 'PL7ML83_VFX3-piHq33v-f_OLwNBiCspbd',
-    # 'PLq2oPZxNIlYR3ZE8BDgGhL9nzU7SHUVcP',
-    # 'PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt',
-    # 'PLnpYU8_AiEPeQRMu7ON4GnoPBkbgwkju6'
+    'PLlXQj2VGUTmfOrpzgytlcIlu38pQWh4UJ',
+    'PL7PzPXcv-qiwgoGrHFK_yISXKt-vDaD1C',
+    'PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg',
 ]
 
 # Create output directory if it doesn't exist
@@ -89,13 +77,6 @@ os.makedirs(output_dir, exist_ok=True)
 
 for playlist_id in playlists:
     try:
-        # Extract playlist ID from URL
-        # playlist_id_match = re.search(r'list=([\w-]+)', playlist_url)
-        # if not playlist_id_match:
-        #     print(f'Could not extract playlist ID from {playlist_url}')
-        #     continue
-            
-        # playlist_id = playlist_id_match.group(1)
         playlist_url= f'https://www.youtube.com/playlist?list={playlist_id}'
         output_file = f'{output_dir}/{playlist_id}.json'
         

@@ -5,24 +5,24 @@
             "categories": [
                 {
                     "playlist_id": "PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3",
-                    "title":  "حلقات برنامج هدى للناس",
+                    "title": "حلقات برنامج هدى للناس",
                     "url": "https://img.youtube.com/vi/U_BAOVorAnQ/mqdefault.jpg"
-                }, 
+                },
                 {
                     "title": "برنامج \"لا إله إلا الله\" رمضان 2025",
                     "playlist_id": "PL7PzPXcv-qiwgoGrHFK_yISXKt-vDaD1C",
                     "url": "https://img.youtube.com/vi/k6FuXSHS5kk/mqdefault.jpg"
-                }, 
+                },
                 {
                     "playlist_id": "PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg",
                     "title": "تدبر قرآن التراويح",
                     "url": "https://img.youtube.com/vi/tz1d7e3E5gc/mqdefault.jpg"
-                },{
+                },
+                {
                     "title": "عالمغرب ٢",
                     "playlist_id": "PLlXQj2VGUTmfOrpzgytlcIlu38pQWh4UJ",
                     "url": "https://img.youtube.com/vi/X0D1DyvYfSM/mqdefault.jpg"
                 }
-                                
             ]
         },
         {
@@ -37,7 +37,6 @@
                     "playlist_id": "PLFkuO76ICjPmXSX0AOmy60e39KmeRD2Rt",
                     "title": "برنامج آية وحكاية",
                     "url": "https://img.youtube.com/vi/okufiGEv-mA/mqdefault.jpg"
-                
                 },
                 {
                     "playlist_id": "PLq2oPZxNIlYR3ZE8BDgGhL9nzU7SHUVcP",
@@ -101,5 +100,7 @@
                 }
             ]
         }
-    ]
+    ],
+    "total_video_count": 228,
+    "playlist_count": 14
 }
