@@ -2,6 +2,8 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 import time
 import os
 import json
@@ -48,18 +50,16 @@ def extract_playlist(playlist_id):
 
         print("Page loaded successfully")
         # Wait for the page to load
-        from selenium.webdriver.support.ui import WebDriverWait
-        from selenium.webdriver.support import expected_conditions as EC
 
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, "a.yt-simple-endpoint.style-scope.ytd-playlist-video-renderer"))
         )
         driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);")
+        # Scroll to load all videos in the playlist
+        last_height = driver.execute_script("return document.documentElement.scrollHeight")
         WebDriverWait(driver, 10).until(
             lambda d: d.execute_script("return document.documentElement.scrollHeight") > last_height
         )
-        # Scroll to load all videos in the playlist
-        last_height = driver.execute_script("return document.documentElement.scrollHeight")
         while True:
             driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);")
             time.sleep(2)  # Adjust the sleep time as needed
