@@ -21,8 +21,7 @@ chrome_options.binary_location = "/usr/bin/chromium-browser"
 # Set up ChromeDriver service
 service = Service("/usr/lib/chromium-browser/chromedriver")
 
-# Initialize the WebDriver
-driver = webdriver.Chrome(service=service, options=chrome_options)
+# Remove the global WebDriver initialization
 
 playlists = [
     'PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3',
@@ -36,7 +35,11 @@ os.makedirs(output_dir, exist_ok=True)
 
 
 def extract_playlist(playlist_id):
+    # Initialize the WebDriver within the function
+    driver = None
     try:
+        driver = webdriver.Chrome(service=service, options=chrome_options)
+        print("start loading")
         # Open the YouTube playlist URL
         playlist_url= f'https://www.youtube.com/playlist?list={playlist_id}'
         driver.get(playlist_url)
@@ -44,10 +47,17 @@ def extract_playlist(playlist_id):
         output_file = f'{output_dir}/{playlist_id}.json'
 
         print("Page loaded successfully")
-
         # Wait for the page to load
-        time.sleep(5)  # Adjust the sleep time as needed
+        from selenium.webdriver.support.ui import WebDriverWait
+        from selenium.webdriver.support import expected_conditions as EC
 
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, "a.yt-simple-endpoint.style-scope.ytd-playlist-video-renderer"))
+        )
+        driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);")
+        WebDriverWait(driver, 10).until(
+            lambda d: d.execute_script("return document.documentElement.scrollHeight") > last_height
+        )
         # Scroll to load all videos in the playlist
         last_height = driver.execute_script("return document.documentElement.scrollHeight")
         while True:
@@ -93,13 +103,13 @@ def extract_playlist(playlist_id):
 
     finally:
         # Close the browser
-        driver.quit()
+        if driver is not None:
+            driver.quit()
 
 
 for playlist_id in playlists:
     try:
         extract_playlist(playlist_id)
-        
     except Exception as e:
         print(f'Error scraping playlist {playlist_id}: {str(e)}')
 
