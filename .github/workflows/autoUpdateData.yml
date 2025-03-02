@@ -2,7 +2,7 @@ name: Extract YouTube Playlist
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+    - cron: '0 15,18,22 * * *'   # Runs daily at midnight UTC
   workflow_dispatch:     # Allow manual trigger
 
 jobs:
