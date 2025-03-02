@@ -31,9 +31,10 @@ os.makedirs(output_dir, exist_ok=True)
 
 def extract_playlist(playlist_id):
     # Initialize the WebDriver within the function
+    print("extract_playlist")
     driver = None
     try:
-        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
         print("start loading")
         # Open the YouTube playlist URL
