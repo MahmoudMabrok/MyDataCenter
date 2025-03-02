@@ -54,14 +54,21 @@ def extract_playlist(playlist_id):
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.CSS_SELECTOR, "a.yt-simple-endpoint.style-scope.ytd-playlist-video-renderer"))
         )
+
+        print("WebDriverWait")
+       
         driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);")
         # Scroll to load all videos in the playlist
         last_height = driver.execute_script("return document.documentElement.scrollHeight")
+
+        print("last_height")
+        # Wait for the page to load
         WebDriverWait(driver, 10).until(
             lambda d: d.execute_script("return document.documentElement.scrollHeight") > last_height
         )
         while True:
             driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);")
+            print("in loop")
             time.sleep(2)  # Adjust the sleep time as needed
             new_height = driver.execute_script("return document.documentElement.scrollHeight")
             if new_height == last_height:
@@ -101,6 +108,8 @@ def extract_playlist(playlist_id):
             json.dump(videos, f, ensure_ascii=False, indent=2)    
             
 
+    except Exception as e:
+        print(f"## Error scraping playlist {playlist_id}: {str(e)}")
     finally:
         # Close the browser
         if driver is not None:
