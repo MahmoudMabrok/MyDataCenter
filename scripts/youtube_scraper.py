@@ -7,24 +7,52 @@ from pytube import Playlist, YouTube
 
 # Function to extract video information manually to avoid pytube's title issues
 def get_video_info(video_id, playlist_id):
+    import requests
+    import re
+    from urllib.parse import quote_plus
+    
     try:
+        # Add user-agent header to mimic a browser
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
             'Accept-Language': 'en-US,en;q=0.9',
         }
+        
         # Use requests to get the video page
-        response = requests.get(f"https://www.youtube.com/watch?v={video_id}", headers=headers)
+        response = requests.get(f"https://www.youtube.com/watch?v={video_id}", headers=headers, timeout=10)
+        response.raise_for_status()  # Raise exception for HTTP errors
         
-        # Extract title from response (simplified approach)
-        title_match = re.search(r'<title>(.*?) - YouTube</title>', response.text)
-        print(f"get_video_info {video_id}: {title_match}")
-        title = title_match.group(1) if title_match else f"Video {video_id}"
+        # More robust title extraction with multiple patterns
+        title = None
         
+        # Try different patterns to extract title
+        patterns = [
+            r'<title>(.*?) - YouTube</title>',
+            r'<meta property="og:title" content="(.*?)">',
+            r'<meta name="title" content="(.*?)">',
+            r'"title":"(.*?)"'
+        ]
+        
+        for pattern in patterns:
+            title_match = re.search(pattern, response.text)
+            if title_match:
+                title = title_match.group(1)
+                break
+                
+        print(f"get_video_info {video_id}: Response status: {response.status_code}, Content length: {len(response.text)}")
+        print(f"Title extracted: {title}")
+        
+        if not title:
+            print("Failed to extract title, response excerpt:")
+            print(response.text[:200])  # Print first 200 chars for debugging
+            title = f"Video {video_id}"
+            
         return {
             'title': title,
             'url': f'https://www.youtube.com/watch?v={video_id}',
             'thumbnail': f'https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg',
-            'video_id': video_id
+            'video_id': video_id,
+            'playlist_id': playlist_id
         }
     except Exception as e:
         print(f"Error getting info for video {video_id}: {str(e)}")
@@ -33,9 +61,8 @@ def get_video_info(video_id, playlist_id):
             'url': f'https://www.youtube.com/watch?v={video_id}',
             'thumbnail': f'https://i.ytimg.com/vi/{video_id}/mqdefault.jpg',
             'video_id': video_id,
-            'playlistId': playlist_id
+            'playlist_id': playlist_id
         }
-
 # List of playlist URLs to scrape
 playlists = [
     'PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3',
