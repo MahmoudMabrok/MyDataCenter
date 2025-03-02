@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import os
 import json
@@ -16,14 +17,6 @@ chrome_options.add_argument("--headless")  # Run in headless mode
 chrome_options.add_argument("--disable-gpu")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
-
-# Specify the path to the Chromium binary
-chrome_options.binary_location = "/usr/bin/chromium-browser"
-
-# Set up ChromeDriver service
-service = Service("/usr/bin/chromedriver")
-
-# Remove the global WebDriver initialization
 
 playlists = [
     'PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3',
@@ -40,7 +33,8 @@ def extract_playlist(playlist_id):
     # Initialize the WebDriver within the function
     driver = None
     try:
-        driver = webdriver.Chrome(service=service, options=chrome_options)
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+
         print("start loading")
         # Open the YouTube playlist URL
         playlist_url= f'https://www.youtube.com/playlist?list={playlist_id}'
@@ -55,37 +49,29 @@ def extract_playlist(playlist_id):
             EC.presence_of_element_located((By.CSS_SELECTOR, "a.yt-simple-endpoint.style-scope.ytd-playlist-video-renderer"))
         )
 
-        print("WebDriverWait")
-       
         driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);")
         # Scroll to load all videos in the playlist
         last_height = driver.execute_script("return document.documentElement.scrollHeight")
-
-        print("last_height")
-        # Wait for the page to load
-        WebDriverWait(driver, 10).until(
-            lambda d: d.execute_script("return document.documentElement.scrollHeight") > last_height
-        )
+ 
+        print("before loop")
         while True:
             driver.execute_script("window.scrollTo(0, document.documentElement.scrollHeight);")
-            print("in loop")
             time.sleep(2)  # Adjust the sleep time as needed
             new_height = driver.execute_script("return document.documentElement.scrollHeight")
             if new_height == last_height:
                 break
             last_height = new_height
 
-        print("All videos loaded")  
-
         # Extract video titles and links
         video_elements = driver.find_elements(By.CSS_SELECTOR, "a.yt-simple-endpoint.style-scope.ytd-playlist-video-renderer")
 
-        print("All videos loaded 2")  
         videos = []
 
         for video in video_elements:
             title = video.get_attribute("title")
             link = video.get_attribute("href")
+
+            print(f'Extracted video: {title} - {link}')
             
             video_id_match = re.search(r'v=([\w-]+)', link)
             if not video_id_match:
