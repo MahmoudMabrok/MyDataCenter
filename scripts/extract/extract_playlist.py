@@ -22,8 +22,10 @@ driver = webdriver.Chrome(service=service, options=chrome_options)
 
 try:
     # Open the YouTube playlist URL
-    playlist_url = "https://www.youtube.com/playlist?list=YOUR_PLAYLIST_ID"
+    playlist_url = "https://www.youtube.com/playlist?list=PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3"
     driver.get(playlist_url)
+
+    print("Page loaded successfully")
 
     # Wait for the page to load
     time.sleep(5)  # Adjust the sleep time as needed
@@ -38,8 +40,12 @@ try:
             break
         last_height = new_height
 
+    print("All videos loaded")  
     # Extract video titles and links
     video_elements = driver.find_elements(By.CSS_SELECTOR, "a.yt-simple-endpoint.style-scope.ytd-playlist-video-renderer")
+
+    print("All videos loaded 2")  
+
     for video in video_elements:
         title = video.get_attribute("title")
         link = video.get_attribute("href")
