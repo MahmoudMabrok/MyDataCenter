@@ -8,8 +8,12 @@ from pytube import Playlist, YouTube
 # Function to extract video information manually to avoid pytube's title issues
 def get_video_info(video_id, playlist_id):
     try:
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
+            'Accept-Language': 'en-US,en;q=0.9',
+        }
         # Use requests to get the video page
-        response = requests.get(f"https://www.youtube.com/watch?v={video_id}")
+        response = requests.get(f"https://www.youtube.com/watch?v={video_id}", headers=headers)
         
         # Extract title from response (simplified approach)
         title_match = re.search(r'<title>(.*?) - YouTube</title>', response.text)
