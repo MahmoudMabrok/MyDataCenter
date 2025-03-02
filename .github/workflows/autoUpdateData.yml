@@ -35,6 +35,31 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y chromium-browser chromium-chromedriver
 
+      - name: Cache ChromeDriver
+        uses: actions/cache@v3
+        with:
+          path: /usr/lib/chromium-browser/chromedriver
+          key: ${{ runner.os }}-chromedriver}}
+          restore-keys: |
+            ${{ runner.os }}-chromedriver-
+
       - name: Run Selenium script
         run: |
           python scripts/extract/extract_playlist.py
+
+      - name: update count of videos & playlist
+        run: python scripts/analysis/analysis.py   
+      
+      - name: Check for changes
+        id: git-check
+        run: |
+          echo "changes=true" >> $GITHUB_OUTPUT
+      
+      - name: Commit and push if there are changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add playlists/
+          git commit -m "Update YouTube playlist data"
+          git push
