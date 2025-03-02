@@ -21,7 +21,7 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.binary_location = "/usr/bin/chromium-browser"
 
 # Set up ChromeDriver service
-service = Service("/usr/lib/chromium-browser/chromedriver")
+service = Service("/usr/bin/chromedriver")
 
 # Remove the global WebDriver initialization
 
