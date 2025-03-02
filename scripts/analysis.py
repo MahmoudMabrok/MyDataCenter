@@ -1,10 +1,3 @@
-# wrtie pyhton script to aalyis all files in playlist folder and display total number of videos in all playlists and count of playlist
-# Hint: You can use the os module to list all files in a directory and then read each file to extract the video count and playlist information.
-# You can use the json module to read the contents of each file and extract the video count and playlist information.
-# You can use a loop to iterate over all files in the directory and sum the video counts and count the playlists.
-# You can use variables to store the total video count and playlist count.
-# You can print the total video count and playlist count after processing all files in the directory.
-
 import os
 import json
 
@@ -47,10 +40,5 @@ if os.path.exists('data.json'):
         new_Data['playlist_count'] = playlist_count
         with open('data.json', 'w', encoding='utf-8') as output_file:
           json.dump(new_Data, output_file, ensure_ascii=False, indent=4)
-else:
-    new_Data = {}
-
-# Update the total video count and playlist count in the data
 
 
-# Write the updated data back to the file

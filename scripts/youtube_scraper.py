@@ -2,55 +2,31 @@ import json
 import os
 import re
 import time
-import requests
 from pytube import Playlist, YouTube
 
-# Function to extract video information manually to avoid pytube's title issues
-def get_video_info(video_id, playlist_id):
-    import requests
-    import re
-    from urllib.parse import quote_plus
-    
+from yt_dlp import YoutubeDL
+
+def get_youtube_title(url):
     try:
-        # Add user-agent header to mimic a browser
-        headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-            'Accept-Language': 'en-US,en;q=0.9',
-        }
+        # Create a YoutubeDL object
+        ydl = YoutubeDL()
         
-        # Use requests to get the video page
-        response = requests.get(f"https://www.youtube.com/watch?v={video_id}", headers=headers, timeout=10)
-        response.raise_for_status()  # Raise exception for HTTP errors
+        # Extract video info
+        info_dict = ydl.extract_info(url, download=False)
         
-        # More robust title extraction with multiple patterns
-        title = None
-        
-        # Try different patterns to extract title
-        patterns = [
-            r'<title>(.*?) - YouTube</title>',
-            r'<meta property="og:title" content="(.*?)">',
-            r'<meta name="title" content="(.*?)">',
-            r'"title":"(.*?)"'
-        ]
-        
-        for pattern in patterns:
-            title_match = re.search(pattern, response.text)
-            if title_match:
-                title = title_match.group(1)
-                break
-                
-        print(f"get_video_info {video_id}: Response status: {response.status_code}, Content length: {len(response.text)}")
-        print(f"Title extracted: {title}")
-        
-        if not title:
-            print("Failed to extract title, response excerpt:")
-            print(response.text[:200])  # Print first 200 chars for debugging
-            title = f"Video {video_id}"
-            
+        # Return the title
+        return info_dict.get('title', None)
+    except Exception as e:
+        print(f"Error fetching title: {e}")
+        return None
+
+# Function to extract video information manually to avoid pytube's title issues
+def get_video_info(video_id, playlist_id, title):
+    try:
         return {
             'title': title,
             'url': f'https://www.youtube.com/watch?v={video_id}',
-            'thumbnail': f'https://i.ytimg.com/vi/{video_id}/maxresdefault.jpg',
+            'thumbnail': f'https://i.ytimg.com/vi/{video_id}/mqdefault.jpg',
             'video_id': video_id,
             'playlist_id': playlist_id
         }
@@ -108,9 +84,13 @@ for playlist_id in playlists:
                     continue
                     
                 video_id = video_id_match.group(1)
+
+                title = get_youtube_title(video_url)
+
+                print(f'Processing video: {title} {video_id}')
                 
                 # Get video info
-                video_data = get_video_info(video_id, playlist_id)
+                video_data = get_video_info(video_id, playlist_id, title)
                 videos.append(video_data)
                 print(f'Added video: {video_data["title"]}')
                 
@@ -130,7 +110,7 @@ for playlist_id in playlists:
             
         # Save to JSON file
         with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(playlist_data, f, ensure_ascii=False, indent=2)
+            json.dump(videos, f, ensure_ascii=False, indent=2)
             
         print(f'Completed playlist: {playlist_title} with {len(videos)} videos')
         
@@ -138,25 +118,4 @@ for playlist_id in playlists:
         print(f'Error scraping playlist {playlist_url}: {str(e)}')
 
 # Create an index file with all playlist IDs and titles
-try:
-    playlist_index = []
-    for filename in os.listdir(output_dir):
-        if filename.endswith('.json') and filename != "index.json":
-            with open(os.path.join(output_dir, filename), 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                playlist_index.append({
-                    'playlist_id': data.get('playlist_id', ''),
-                    'playlist_title': data.get('playlist_title', ''),
-                    'video_count': data.get('video_count', 0),
-                    'filename': filename
-                })
-    
-    # Save index file
-    with open(f'{output_dir}/index.json', 'w', encoding='utf-8') as f:
-        json.dump(playlist_index, f, ensure_ascii=False, indent=2)
-    
-    print(f'Created index file with {len(playlist_index)} playlists')
-except Exception as e:
-    print(f'Error creating index file: {str(e)}')
-
 print(f'Successfully completed scraping process')
