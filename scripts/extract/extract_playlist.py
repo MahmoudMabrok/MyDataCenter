@@ -23,6 +23,7 @@ playlists = [
     'PLlXQj2VGUTmfOrpzgytlcIlu38pQWh4UJ',
     'PL7PzPXcv-qiwgoGrHFK_yISXKt-vDaD1C',
     'PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg',
+    'PLQVX7_Rc0v0sxfB-H-RhYZOdhFVyzbbvI',
 ]
 
 output_dir = 'playlists'
