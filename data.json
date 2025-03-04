@@ -24,9 +24,9 @@
                     "url": "https://img.youtube.com/vi/X0D1DyvYfSM/mqdefault.jpg"
                 },
                 {
-                  "title": "أمداد قرآنية - سورة المؤمنون", 
-                  "playlist_id": "PLQVX7_Rc0v0sxfB-H-RhYZOdhFVyzbbvI",
-                  "url": "https://img.youtube.com/vi/ZARMkoaF7dk/mqdefault.jpg"  
+                    "title": "أمداد قرآنية - سورة المؤمنون",
+                    "playlist_id": "PLQVX7_Rc0v0sxfB-H-RhYZOdhFVyzbbvI",
+                    "url": "https://img.youtube.com/vi/ZARMkoaF7dk/mqdefault.jpg"
                 }
             ]
         },
@@ -34,9 +34,9 @@
             "title": "القران والتفسير",
             "categories": [
                 {
-                  "title": "أمداد قرآنية - سورة المؤمنون", 
-                  "playlist_id": "PLQVX7_Rc0v0sxfB-H-RhYZOdhFVyzbbvI",
-                  "url": "https://img.youtube.com/vi/ZARMkoaF7dk/mqdefault.jpg"  
+                    "title": "أمداد قرآنية - سورة المؤمنون",
+                    "playlist_id": "PLQVX7_Rc0v0sxfB-H-RhYZOdhFVyzbbvI",
+                    "url": "https://img.youtube.com/vi/ZARMkoaF7dk/mqdefault.jpg"
                 },
                 {
                     "title": "أمداد_قرآنية - سورة الفاتحة",
@@ -126,6 +126,6 @@
             ]
         }
     ],
-    "total_video_count": 297,
-    "playlist_count": 16
+    "total_video_count": 314,
+    "playlist_count": 18
 }
