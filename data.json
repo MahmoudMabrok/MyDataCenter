@@ -22,12 +22,22 @@
                     "title": "عالمغرب ٢",
                     "playlist_id": "PLlXQj2VGUTmfOrpzgytlcIlu38pQWh4UJ",
                     "url": "https://img.youtube.com/vi/X0D1DyvYfSM/mqdefault.jpg"
+                },
+                {
+                  "title": "أمداد قرآنية - سورة المؤمنون", 
+                  "playlist_id": "PLQVX7_Rc0v0sxfB-H-RhYZOdhFVyzbbvI",
+                  "url": "https://img.youtube.com/vi/ZARMkoaF7dk/mqdefault.jpg"  
                 }
             ]
         },
         {
             "title": "القران والتفسير",
             "categories": [
+                {
+                  "title": "أمداد قرآنية - سورة المؤمنون", 
+                  "playlist_id": "PLQVX7_Rc0v0sxfB-H-RhYZOdhFVyzbbvI",
+                  "url": "https://img.youtube.com/vi/ZARMkoaF7dk/mqdefault.jpg"  
+                },
                 {
                     "playlist_id": "PLnpYU8_AiEPeQRMu7ON4GnoPBkbgwkju6",
                     "title": "تفسير سورة البقرة | د. أحمد عبد المنعم",
