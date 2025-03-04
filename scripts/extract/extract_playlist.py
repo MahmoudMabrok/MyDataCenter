@@ -24,6 +24,12 @@ playlists = [
     'PL7PzPXcv-qiwgoGrHFK_yISXKt-vDaD1C',
     'PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg',
     'PLQVX7_Rc0v0sxfB-H-RhYZOdhFVyzbbvI',
+    'PLPq7duxpJ2hQiI1ys24jgWjsY0heuuchY',
+    'PLPq7duxpJ2hRdlpEvpp2nt3uTLU6fArFN',
+    'PLPq7duxpJ2hQjF2EhnRQ92dvz-7yOGf4h',
+    'PLPq7duxpJ2hTJKUQv4UUcgkKNE8KtQjLB',
+    'PLPq7duxpJ2hRtvHQWRLjZRKQvMa0I07KV',
+    'PLPq7duxpJ2hTlRudRjHtG7F7wCHeBhh8U'
 ]
 
 output_dir = 'playlists'
