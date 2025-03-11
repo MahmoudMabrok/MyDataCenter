@@ -19,6 +19,7 @@ chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 
 playlists = [
+    'PLS4AHyAvpjOqVlkpVY4h_ETN7tGYIlLAQ',
     'PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3',
     'PLlXQj2VGUTmfOrpzgytlcIlu38pQWh4UJ',
     'PL7PzPXcv-qiwgoGrHFK_yISXKt-vDaD1C',
