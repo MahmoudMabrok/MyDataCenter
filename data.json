@@ -4,11 +4,6 @@
             "title": "رمضان ٢٥",
             "categories": [
                 {
-                    "playlist_id": "PLj-c0x-mEc3teWsA0IX4LPtGfJ6y27-A-",
-                    "title": "فهد الكندري | برنامج علمني القرآن ",
-                    "url": "https://i.ytimg.com/vi/kjxuS57Cmoc/mqdefault.jpg"
-                },
-                {
                     "playlist_id": "PLj-c0x-mEc3v0uD4N-fIBHO8Mhqqy2KOV",
                     "title": "بودكاست استراحة",
                     "url": "https://i.ytimg.com/vi/p_9AXliS6A4/mqdefault.jpg"
@@ -77,6 +72,11 @@
                     "playlist_id": "PLPq7duxpJ2hQiI1ys24jgWjsY0heuuchY",
                     "title": "سلسلة حول آي القرآن | سؤال ثم أجب | رمضان 1446 ه‍",
                     "url": "https://i.ytimg.com/vi/hy8qNsNgrYw/mqdefault.jpg"
+                },
+                {
+                    "playlist_id": "PLj-c0x-mEc3teWsA0IX4LPtGfJ6y27-A-",
+                    "title": "فهد الكندري | برنامج علمني القرآن ",
+                    "url": "https://i.ytimg.com/vi/kjxuS57Cmoc/mqdefault.jpg"
                 }
             ]
         },
