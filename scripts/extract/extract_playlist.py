@@ -19,27 +19,25 @@ chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 
 playlists = [
-    # 'PLj-c0x-mEc3teWsA0IX4LPtGfJ6y27-A-',
-    # 'PLj-c0x-mEc3v0uD4N-fIBHO8Mhqqy2KOV',
-    # 'PLj-c0x-mEc3vhkJ-d1d1QDgn27Tx8niSc',
-    # 'PLj-c0x-mEc3seVyQE6Swp6Svh6Hg3FiOr',
-    # 'PLS4AHyAvpjOqVlkpVY4h_ETN7tGYIlLAQ',
-    # 'PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3',
-    # 'PLlXQj2VGUTmfOrpzgytlcIlu38pQWh4UJ',
-    # 'PL7PzPXcv-qiwgoGrHFK_yISXKt-vDaD1C',
-    # 'PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg',
-    # 'PLQVX7_Rc0v0sxfB-H-RhYZOdhFVyzbbvI',
-    # 'PLPq7duxpJ2hQiI1ys24jgWjsY0heuuchY',
-    # 'PLPq7duxpJ2hRdlpEvpp2nt3uTLU6fArFN',
-    # 'PLPq7duxpJ2hQjF2EhnRQ92dvz-7yOGf4h',
-    # 'PLPq7duxpJ2hTJKUQv4UUcgkKNE8KtQjLB',
-    # 'PLPq7duxpJ2hRtvHQWRLjZRKQvMa0I07KV',
-    # 'PLPq7duxpJ2hTlRudRjHtG7F7wCHeBhh8U'
-    'PLm03iTMIs8rfyDnctXZSOnsq3xRe1606H',
-    'PLcdCk5ljWQ-p3t9E_vPcGzZMGLoAeRUO5'
+    'PLj-c0x-mEc3teWsA0IX4LPtGfJ6y27-A-',
+    'PLj-c0x-mEc3v0uD4N-fIBHO8Mhqqy2KOV',
+    'PLj-c0x-mEc3vhkJ-d1d1QDgn27Tx8niSc',
+    'PLj-c0x-mEc3seVyQE6Swp6Svh6Hg3FiOr',
+    'PLS4AHyAvpjOqVlkpVY4h_ETN7tGYIlLAQ',
+    'PLx8eSI7UgsiGA9f1ztAHoemtDlfJUd5a3',
+    'PLlXQj2VGUTmfOrpzgytlcIlu38pQWh4UJ',
+    'PL7PzPXcv-qiwgoGrHFK_yISXKt-vDaD1C',
+    'PLukAHj56HNKZN-7qGg2tsY5-txmFts1bg',
+    'PLQVX7_Rc0v0sxfB-H-RhYZOdhFVyzbbvI',
+    'PLPq7duxpJ2hQiI1ys24jgWjsY0heuuchY',
+    'PLPq7duxpJ2hRdlpEvpp2nt3uTLU6fArFN',
+    'PLPq7duxpJ2hQjF2EhnRQ92dvz-7yOGf4h',
+    'PLPq7duxpJ2hTJKUQv4UUcgkKNE8KtQjLB',
+    'PLPq7duxpJ2hRtvHQWRLjZRKQvMa0I07KV',
+    'PLPq7duxpJ2hTlRudRjHtG7F7wCHeBhh8U'
 ]
 
-output_dir = 'nader/playlists'
+output_dir = 'playlists'
 os.makedirs(output_dir, exist_ok=True)
 
 
