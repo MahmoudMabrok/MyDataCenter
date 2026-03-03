@@ -129,6 +129,7 @@ def extract_playlist(playlist_id, playlist_title):
 # The GitHub workflow sets this from the `extra_playlists` workflow_dispatch
 # input, which is a JSON array of {"id": "...", "title": "..."} objects.
 import os as _os
+import ast as _ast
 
 _extra_raw = _os.environ.get('EXTRA_PLAYLISTS', '[]').strip()
 try:
@@ -139,11 +140,52 @@ except (json.JSONDecodeError, ValueError) as _e:
     print(f'Warning: Could not parse EXTRA_PLAYLISTS – {_e}. Ignoring.')
     _extra = []
 
+# Validate entries: each item must have non-empty 'id' and 'title' strings
+def _is_valid_playlist(p):
+    return (
+        isinstance(p, dict)
+        and isinstance(p.get('id'), str) and p['id'].strip()
+        and isinstance(p.get('title'), str) and p['title'].strip()
+    )
+
+_valid_extra = [p for p in _extra if _is_valid_playlist(p)]
+if len(_valid_extra) != len(_extra):
+    _invalid = [p for p in _extra if not _is_valid_playlist(p)]
+    print(f'Warning: Skipping {len(_invalid)} invalid playlist entry/entries (missing or empty id/title): {_invalid}')
+
 # Deduplicate: extra playlists with an id already in the static list are skipped
 _existing_ids = {p['id'] for p in playlists}
-_new = [p for p in _extra if p.get('id') and p['id'] not in _existing_ids]
+_new = [p for p in _valid_extra if p['id'] not in _existing_ids]
 if _new:
     print(f'Adding {len(_new)} extra playlist(s) from workflow input: {[p["id"] for p in _new]}')
+
+    # ------------------------------------------------------------------
+    # Persist: write the new entries back into the `playlists` list in
+    # this script file so future runs include them without extra input.
+    # ------------------------------------------------------------------
+    _script_path = _os.path.abspath(__file__)
+    with open(_script_path, 'r', encoding='utf-8') as _f:
+        _source = _f.read()
+
+    # Locate the closing bracket of the `playlists = [...]` literal and
+    # insert the new entries just before it.
+    import re as _re
+    _new_entries = ''.join(
+        f'    {{"id": "{p["id"]}",   "title": "{p["title"]}"}},\n'
+        for p in _new
+    )
+    # Match the playlists list block: from `playlists = [` up to the closing `]`
+    _pattern = r'(playlists\s*=\s*\[.*?)(\n\])'  # non-greedy, DOTALL
+    _replacement = r'\1\n' + _new_entries.rstrip('\n') + r'\2'
+    _updated_source = _re.sub(_pattern, _replacement, _source, count=1, flags=_re.DOTALL)
+
+    if _updated_source == _source:
+        print('Warning: Could not locate the playlists list in the script. New entries were NOT persisted.')
+    else:
+        with open(_script_path, 'w', encoding='utf-8') as _f:
+            _f.write(_updated_source)
+        print(f'Persisted {len(_new)} new playlist(s) into the static list in {_script_path}')
+
 all_playlists = playlists + _new
 
 for playlist in all_playlists:
