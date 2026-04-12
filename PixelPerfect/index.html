@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelPerfect | Premium Image Resizer</title>
+    <meta name="description" content="Professional batch image resizer for Play Store icons, screenshots and custom dimensions.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <i data-lucide="maximize" class="logo-icon"></i>
+                <h1>PixelPerfect</h1>
+            </div>
+            <p class="subtitle">Elevate your assets with precision resizing</p>
+        </header>
+
+        <nav class="tab-nav">
+            <button class="tab-btn active" data-tab="resizer">
+                <i data-lucide="maximize"></i> Image Resizer
+            </button>
+            <button class="tab-btn" data-tab="feature-graphic">
+                <i data-lucide="layout"></i> Feature Graphic
+            </button>
+        </nav>
+
+        <main>
+            <div id="tab-resizer" class="tab-panel">
+            <section class="config-section">
+                <div class="card">
+                    <h2><i data-lucide="settings-2"></i> Presets & Dimensions</h2>
+                    <div class="presets-grid">
+                        <button class="preset-btn active" data-width="512" data-height="512" data-name="Google Play Icon">
+                            <i data-lucide="app-window"></i>
+                            <span>Play Store Icon</span>
+                            <small>512 x 512</small>
+                        </button>
+                        <button class="preset-btn" data-width="1080" data-height="1920" data-name="Play Store Screenshot">
+                            <i data-lucide="smartphone"></i>
+                            <span>PS Screenshot</span>
+                            <small>1080 x 1920</small>
+                        </button>
+                        <button class="preset-btn" id="custom-preset-btn">
+                            <i data-lucide="settings"></i>
+                            <span>Custom</span>
+                            <small>Define size</small>
+                        </button>
+                    </div>
+
+                    <div id="custom-inputs" class="custom-inputs hidden">
+                        <div class="input-group">
+                            <label for="width">Width (px)</label>
+                            <input type="number" id="width" value="512" min="1">
+                        </div>
+                        <div class="input-group">
+                            <label for="height">Height (px)</label>
+                            <input type="number" id="height" value="512" min="1">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="upload-section">
+                <div class="drop-zone" id="drop-zone">
+                    <input type="file" id="file-input" multiple accept="image/*" hidden>
+                    <div class="drop-zone-content">
+                        <i data-lucide="upload-cloud" class="upload-icon"></i>
+                        <h3>Drop images here</h3>
+                        <p>or click to browse from your device</p>
+                        <span class="upload-hint">Support PNG, JPG, WEBP</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="results-section hidden" id="results-section">
+                <div class="results-header">
+                    <h2><i data-lucide="image"></i> Processed Images</h2>
+                    <button id="download-all-btn" class="primary-btn">
+                        <i data-lucide="download"></i>
+                        Download All (ZIP)
+                    </button>
+                </div>
+                <div class="results-grid" id="results-grid">
+                    <!-- Results will be injected here -->
+                </div>
+            </section>
+            </div>
+
+            <div id="tab-feature-graphic" class="tab-panel hidden">
+    <div class="fg-editor">
+
+        <!-- LEFT: Toolbar -->
+        <aside class="fg-toolbar card">
+
+            <!-- Add Photo -->
+            <div class="fg-toolbar-section">
+                <h3><i data-lucide="image-plus"></i> Photos</h3>
+                <input type="file" id="fg-photo-input" accept="image/*" multiple hidden>
+                <button class="fg-btn" id="fg-add-photo-btn">
+                    <i data-lucide="upload"></i> Add Photo
+                </button>
+            </div>
+
+            <!-- Add Text -->
+            <div class="fg-toolbar-section">
+                <h3><i data-lucide="type"></i> Text</h3>
+                <button class="fg-btn" id="fg-add-text-btn">
+                    <i data-lucide="plus"></i> Add Text
+                </button>
+            </div>
+
+            <!-- Background -->
+            <div class="fg-toolbar-section">
+                <h3><i data-lucide="palette"></i> Background</h3>
+                <div class="fg-bg-controls">
+                    <label class="fg-color-label">
+                        <span>Color</span>
+                        <input type="color" id="fg-bg-color" value="#1a1a2e">
+                    </label>
+                    <input type="file" id="fg-bg-image-input" accept="image/*" hidden>
+                    <button class="fg-btn" id="fg-bg-image-btn">
+                        <i data-lucide="image"></i> Use Image
+                    </button>
+                </div>
+            </div>
+
+            <!-- Text Styling (shown when text layer selected) -->
+            <div class="fg-toolbar-section hidden" id="fg-text-style-panel">
+                <h3><i data-lucide="sliders-horizontal"></i> Text Style</h3>
+                <div class="fg-text-controls">
+                    <div class="fg-field">
+                        <label>Font</label>
+                        <select id="fg-font-family">
+                            <option value="Inter, sans-serif">Inter</option>
+                            <option value="Arial, sans-serif">Arial</option>
+                            <option value="Georgia, serif">Georgia</option>
+                            <option value="'Courier New', monospace">Courier New</option>
+                            <option value="Impact, sans-serif">Impact</option>
+                        </select>
+                    </div>
+                    <div class="fg-field">
+                        <label>Size (px)</label>
+                        <input type="number" id="fg-font-size" value="48" min="8" max="300">
+                    </div>
+                    <div class="fg-field">
+                        <label>Color</label>
+                        <input type="color" id="fg-text-color" value="#ffffff">
+                    </div>
+                    <div class="fg-style-toggles">
+                        <button class="fg-toggle-btn" id="fg-bold-btn" data-prop="bold"><b>B</b></button>
+                        <button class="fg-toggle-btn" id="fg-italic-btn" data-prop="italic"><i>I</i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Layers List -->
+            <div class="fg-toolbar-section">
+                <h3><i data-lucide="layers"></i> Layers</h3>
+                <ul class="fg-layers-list" id="fg-layers-list">
+                    <li class="fg-no-layers">No layers yet</li>
+                </ul>
+            </div>
+
+        </aside>
+
+        <!-- RIGHT: Canvas -->
+        <div class="fg-canvas-wrapper">
+            <canvas id="fg-canvas" width="1024" height="500"></canvas>
+            <div class="fg-text-edit-overlay hidden" id="fg-text-edit-overlay">
+                <textarea id="fg-text-edit-input" rows="3"></textarea>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Export Bar -->
+    <div class="fg-export-bar card">
+        <div class="fg-format-toggle">
+            <button class="fg-format-btn active" data-format="image/png" id="fg-fmt-png">PNG</button>
+            <button class="fg-format-btn" data-format="image/jpeg" id="fg-fmt-jpg">JPG</button>
+        </div>
+        <button class="primary-btn" id="fg-save-btn">
+            <i data-lucide="download"></i> Save Feature Graphic
+        </button>
+    </div>
+</div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 PixelPerfect. Built for creators.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="feature-graphic.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
