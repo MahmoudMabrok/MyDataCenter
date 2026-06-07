@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bonus Calculator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Space+Mono:wght@400;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0e1117;
+    --panel:#161b24;
+    --panel-2:#1d2531;
+    --line:#2a3340;
+    --ink:#e8eaed;
+    --muted:#8b96a5;
+    --gold:#d4a857;
+    --gold-soft:#f0d9a8;
+    --green:#5fbf8f;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:'Manrope',sans-serif;
+    background:
+      radial-gradient(900px 500px at 85% -10%, rgba(212,168,87,.10), transparent 60%),
+      radial-gradient(700px 500px at -10% 110%, rgba(95,191,143,.08), transparent 55%),
+      var(--bg);
+    color:var(--ink);
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:28px 18px;
+  }
+  .card{
+    width:100%;
+    max-width:880px;
+    background:var(--panel);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:0 30px 80px -30px rgba(0,0,0,.7);
+  }
+  .head{
+    padding:30px 32px 26px;
+    border-bottom:1px solid var(--line);
+    background:linear-gradient(180deg, rgba(212,168,87,.05), transparent);
+  }
+  .eyebrow{
+    font-family:'Space Mono',monospace;
+    font-size:11px;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    color:var(--gold);
+  }
+  h1{
+    font-family:'Fraunces',serif;
+    font-weight:500;
+    font-size:34px;
+    letter-spacing:-.01em;
+    margin-top:8px;
+  }
+  h1 em{color:var(--gold-soft);font-style:italic;}
+  .grid{display:grid;grid-template-columns:1fr 320px;}
+  @media(max-width:720px){.grid{grid-template-columns:1fr;}}
+  .inputs{padding:28px 32px 32px;}
+  .field{margin-bottom:22px;}
+  .field label{
+    display:block;
+    font-size:12px;
+    letter-spacing:.04em;
+    color:var(--muted);
+    margin-bottom:9px;
+    font-weight:600;
+  }
+  .field label span{color:var(--gold);font-family:'Space Mono',monospace;font-size:11px;}
+  .input-wrap{position:relative;}
+  .input-wrap .pre{
+    position:absolute;left:14px;top:50%;transform:translateY(-50%);
+    color:var(--muted);font-family:'Space Mono',monospace;font-size:14px;pointer-events:none;
+  }
+  input[type=number], select{
+    width:100%;
+    background:var(--panel-2);
+    border:1px solid var(--line);
+    border-radius:10px;
+    color:var(--ink);
+    font-family:'Space Mono',monospace;
+    font-size:16px;
+    padding:13px 14px;
+    transition:border-color .15s, box-shadow .15s;
+  }
+  input.has-pre{padding-left:42px;}
+  input:focus, select:focus{
+    outline:none;border-color:var(--gold);
+    box-shadow:0 0 0 3px rgba(212,168,87,.14);
+  }
+  select{cursor:pointer;appearance:none;
+    background-image:url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%238b96a5' stroke-width='1.5'/%3E%3C/svg%3E");
+    background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .hint{font-size:11px;color:var(--muted);margin-top:7px;line-height:1.4;}
+
+  .result{
+    background:var(--panel-2);
+    border-left:1px solid var(--line);
+    padding:28px 28px 30px;
+    display:flex;flex-direction:column;
+  }
+  @media(max-width:720px){.result{border-left:none;border-top:1px solid var(--line);}}
+  .result .lbl{font-size:12px;letter-spacing:.05em;color:var(--muted);font-weight:600;}
+  .bonus{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    font-size:46px;
+    line-height:1.05;
+    margin:10px 0 4px;
+    color:var(--gold-soft);
+    word-break:break-word;
+  }
+  .bonus .cur{font-size:20px;color:var(--gold);font-family:'Space Mono',monospace;font-weight:400;}
+  .pct{font-size:13px;color:var(--green);font-family:'Space Mono',monospace;}
+  .breakdown{margin-top:24px;border-top:1px dashed var(--line);padding-top:18px;}
+  .row{display:flex;justify-content:space-between;align-items:baseline;padding:7px 0;font-size:13px;}
+  .row .k{color:var(--muted);}
+  .row .v{font-family:'Space Mono',monospace;color:var(--ink);}
+  .row.total{border-top:1px solid var(--line);margin-top:8px;padding-top:12px;}
+  .row.total .k{color:var(--ink);font-weight:600;}
+  .row.total .v{color:var(--gold-soft);font-weight:700;}
+  .seg{display:flex;gap:8px;}
+  .seg button{
+    flex:1;background:var(--panel-2);border:1px solid var(--line);color:var(--muted);
+    font-family:'Manrope',sans-serif;font-weight:600;font-size:13px;padding:12px;border-radius:10px;cursor:pointer;
+    transition:all .15s;
+  }
+  .seg button .x{display:block;font-family:'Space Mono',monospace;font-size:11px;margin-top:3px;opacity:.7;}
+  .seg button.active{border-color:var(--gold);color:var(--gold-soft);background:rgba(212,168,87,.10);}
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="head">
+      <div class="eyebrow">Compensation</div>
+      <h1>Bonus <em>Calculator</em></h1>
+    </div>
+
+    <div class="grid">
+      <div class="inputs">
+        <div class="field">
+          <label>Current salary <span>S</span></label>
+          <div class="input-wrap">
+            <span class="pre" id="curSym">EGP</span>
+            <input class="has-pre" type="number" id="salary" value="20000" min="0" step="500">
+          </div>
+        </div>
+
+        <div class="two">
+          <div class="field">
+            <label>Company multiplier <span>M</span></label>
+            <input type="number" id="company" value="1.2" min="0" step="0.05">
+            <div class="hint">Org-wide pool factor</div>
+          </div>
+          <div class="field">
+            <label>Individual rate <span>R</span></label>
+            <input type="number" id="rate" value="1" min="0" step="0.05">
+            <div class="hint">Personal performance factor</div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Band <span>B</span></label>
+          <div class="seg" id="band">
+            <button data-band="0.8" class="active">Junior <span class="x">×0.8</span></button>
+            <button data-band="1">Senior <span class="x">×1.0</span></button>
+          </div>
+        </div>
+
+        <div class="field" style="margin-bottom:0;">
+          <label>Currency</label>
+          <select id="currency">
+            <option value="EGP">EGP — Egyptian Pound</option>
+            <option value="USD">USD — US Dollar</option>
+            <option value="EUR">EUR — Euro</option>
+            <option value="SAR">SAR — Saudi Riyal</option>
+            <option value="AED">AED — UAE Dirham</option>
+            <option value="GBP">GBP — Pound Sterling</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="result">
+        <div class="lbl">Calculated bonus</div>
+        <div class="bonus"><span class="cur" id="outSym">EGP</span> <span id="bonusVal">0</span></div>
+        <div class="pct" id="pctVal">— of salary</div>
+
+        <div class="breakdown">
+          <div class="row"><span class="k">Salary</span><span class="v" id="bS">0</span></div>
+          <div class="row"><span class="k">× Company</span><span class="v" id="bM">1.0</span></div>
+          <div class="row"><span class="k">× Band</span><span class="v" id="bB">0.8</span></div>
+          <div class="row"><span class="k">× Individual</span><span class="v" id="bR">1.0</span></div>
+          <div class="row total"><span class="k">Bonus</span><span class="v" id="bT">0</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+  const $ = id => document.getElementById(id);
+  let band = 0.8;
+
+  const fmt = n => new Intl.NumberFormat('en-US',{maximumFractionDigits:0}).format(Math.round(n));
+
+  function calc(){
+    const S = parseFloat($('salary').value) || 0;
+    const M = parseFloat($('company').value) || 0;
+    const R = parseFloat($('rate').value) || 0;
+    const cur = $('currency').value;
+    const bonus = S * M * band * R;
+
+    $('curSym').textContent = cur;
+    $('outSym').textContent = cur;
+    $('bonusVal').textContent = fmt(bonus);
+    $('pctVal').textContent = S > 0 ? (Math.round(bonus / S * 1000) / 10) + '% of salary' : '— of salary';
+
+    $('bS').textContent = fmt(S);
+    $('bM').textContent = '×' + M;
+    $('bB').textContent = '×' + band;
+    $('bR').textContent = '×' + R;
+    $('bT').textContent = fmt(bonus);
+  }
+
+  document.querySelectorAll('#band button').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('#band button').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      band = parseFloat(btn.dataset.band);
+      calc();
+    });
+  });
+
+  ['salary','company','rate','currency'].forEach(id => $(id).addEventListener('input', calc));
+  calc();
+</script>
+</body>
+</html>
