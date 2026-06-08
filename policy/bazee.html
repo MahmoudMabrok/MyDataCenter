@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy — Bazeed Pharmacy / سياسة الخصوصية — صيدلية بازيد</title>
+    <meta name="description" content="Privacy policy for the Bazeed Pharmacy mobile app — what data we collect, how it is used, and your rights.">
+    <style>
+        :root {
+            --ink: #1f2937;
+            --ink-mute: #6b7280;
+            --paper: #ffffff;
+            --paper-2: #f9fafb;
+            --line: #e5e7eb;
+            --accent: #2e7d32;
+            --link: #1d4ed8;
+        }
+        * { box-sizing: border-box; }
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: var(--paper-2);
+            color: var(--ink);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                         "Helvetica Neue", Arial, "Noto Sans", "Noto Sans Arabic",
+                         sans-serif;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        main {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 32px 20px 64px;
+            background: var(--paper);
+            min-height: 100vh;
+        }
+        h1 {
+            font-size: 1.55rem;
+            line-height: 1.3;
+            margin: 0 0 8px;
+            color: var(--ink);
+        }
+        h2 {
+            font-size: 1.25rem;
+            margin: 40px 0 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--line);
+            color: var(--ink);
+        }
+        h3 {
+            font-size: 1.02rem;
+            margin: 24px 0 8px;
+            color: var(--ink);
+        }
+        p, ul, ol { margin: 0 0 12px; }
+        ul, ol { padding-inline-start: 22px; }
+        li { margin: 4px 0; }
+        a { color: var(--link); }
+        a:hover { text-decoration: none; }
+        strong { color: var(--ink); }
+        .meta {
+            color: var(--ink-mute);
+            font-style: italic;
+            margin: 0 0 24px;
+            font-size: 0.95rem;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid var(--line);
+            margin: 40px 0;
+        }
+        .table-wrap {
+            overflow-x: auto;
+            margin: 0 0 12px;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.94rem;
+            min-width: 520px;
+        }
+        th, td {
+            padding: 10px 12px;
+            text-align: start;
+            border-bottom: 1px solid var(--line);
+            vertical-align: top;
+        }
+        th {
+            background: var(--paper-2);
+            font-weight: 600;
+            color: var(--ink);
+        }
+        tr:last-child td { border-bottom: 0; }
+        section.ar {
+            direction: rtl;
+            text-align: start;
+        }
+        section.ar table { min-width: 520px; }
+        @media (max-width: 480px) {
+            main { padding: 24px 16px 48px; }
+            h1 { font-size: 1.35rem; }
+            h2 { font-size: 1.15rem; }
+        }
+    </style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy — Bazeed Pharmacy<br>سياسة الخصوصية — صيدلية بازيد</h1>
+<p class="meta">Last updated: 8 June 2026 / آخر تحديث: ٨ يونيو ٢٠٢٦</p>
+
+<hr>
+
+<section class="en" lang="en" dir="ltr">
+
+<h2>English</h2>
+
+<p>Bazeed Pharmacy ("we", "us", "our") operates the <strong>Bazeed</strong> mobile app (the "App"). This page explains what information the App collects, how it is used, and the choices you have.</p>
+
+<h3>1. Who we are</h3>
+<ul>
+    <li>Bazeed Pharmacy — 11th Building, end of Al-Daery Street, Noubaria City, Beheira, Egypt.</li>
+    <li>Contact: <strong><a href="mailto:mahmoudmabrok3579@gmail.com">mahmoudmabrok3579@gmail.com</a></strong> · <strong>+20 10 4476 7648</strong></li>
+</ul>
+
+<h3>2. Information the App collects</h3>
+<p>The customer App is designed to work <strong>without a user account</strong>. You can browse pharmacy information, health announcements, and contact details without signing in or providing personal data.</p>
+
+<div class="table-wrap">
+<table>
+    <thead>
+        <tr>
+            <th>Data</th>
+            <th>When collected</th>
+            <th>Purpose</th>
+            <th>Stored where</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Firebase Cloud Messaging (FCM) token</td>
+            <td>When you grant the "Post Notifications" permission</td>
+            <td>Send health alerts and pharmacy announcements</td>
+            <td>Google Firebase (anonymous device token)</td>
+        </tr>
+        <tr>
+            <td>Diagnostic / crash data</td>
+            <td>Automatically by the Android system if a crash occurs</td>
+            <td>Improve stability</td>
+            <td>Google Play Console (aggregated)</td>
+        </tr>
+        <tr>
+            <td>Pharmacy announcement content</td>
+            <td>Loaded from our Firestore database</td>
+            <td>Display content in the App</td>
+            <td>Google Firestore (read-only for customers)</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<p>We <strong>do not</strong> collect your name, phone number, location, contacts, photos, or any other personally identifying information through the customer App.</p>
+
+<h3>3. Admin app (separate)</h3>
+<p>A separate "Bazeed — Admin" build exists for pharmacy staff. It requires sign-in with an email and password via Firebase Authentication. That data is processed only to authenticate authorised staff and is not shared with third parties beyond Google as our infrastructure provider.</p>
+
+<h3>4. Permissions used</h3>
+<ul>
+    <li><strong>POST_NOTIFICATIONS</strong> — to deliver pharmacy announcements as push notifications. You may revoke this in your device settings at any time.</li>
+</ul>
+
+<h3>5. Third-party services</h3>
+<p>We use Google Firebase (Cloud Messaging, Firestore, Authentication for admin) as our backend. Firebase processes data subject to Google's privacy practices: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+
+<h3>6. Children's privacy</h3>
+<p>The App is intended for users aged 13 and above. We do not knowingly collect data from children under 13.</p>
+
+<h3>7. Data retention</h3>
+<ul>
+    <li>FCM tokens are kept while the App is installed and your permission is granted; uninstalling the App invalidates the token.</li>
+    <li>Admin authentication records persist until the account is deleted by the pharmacy.</li>
+</ul>
+
+<h3>8. Your rights</h3>
+<p>You may request deletion of any data tied to you (admin accounts, FCM tokens) by emailing <strong><a href="mailto:mahmoudmabrok3579@gmail.com">mahmoudmabrok3579@gmail.com</a></strong>. We will respond within 30 days.</p>
+
+<h3>9. Changes to this policy</h3>
+<p>We may update this policy as the App evolves. The "Last updated" date above will reflect any change. Continued use of the App means you accept the revised policy.</p>
+
+<h3>10. Contact</h3>
+<p>Questions or requests: <strong><a href="mailto:mahmoudmabrok3579@gmail.com">mahmoudmabrok3579@gmail.com</a></strong>.</p>
+
+</section>
+
+<hr>
+
+<section class="ar" lang="ar" dir="rtl">
+
+<h2>العربية</h2>
+
+<p>تُشغّل صيدلية بازيد ("نحن") تطبيق <strong>بازيد</strong> للهواتف ("التطبيق"). توضح هذه الصفحة ما يجمعه التطبيق من معلومات، وكيف تُستخدم، والخيارات المتاحة لك.</p>
+
+<h3>١. من نحن</h3>
+<ul>
+    <li>صيدلية بازيد — العمارة الـ١١، نهاية شارع الدائري، مدينة النوبارية، البحيرة، مصر.</li>
+    <li>للتواصل: <strong><a href="mailto:mahmoudmabrok3579@gmail.com">mahmoudmabrok3579@gmail.com</a></strong> · <strong>010 4476 7648</strong></li>
+</ul>
+
+<h3>٢. المعلومات التي يجمعها التطبيق</h3>
+<p>تطبيق العميل مصمم للعمل <strong>دون حساب مستخدم</strong>. يمكنك تصفح بيانات الصيدلية والإعلانات الصحية ومعلومات التواصل دون تسجيل الدخول أو تقديم أي بيانات شخصية.</p>
+
+<div class="table-wrap">
+<table>
+    <thead>
+        <tr>
+            <th>البيانات</th>
+            <th>متى تُجمع</th>
+            <th>الغرض</th>
+            <th>مكان الحفظ</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>رمز Firebase Cloud Messaging</td>
+            <td>عند منح إذن «إرسال الإشعارات»</td>
+            <td>إرسال التنبيهات الصحية وإعلانات الصيدلية</td>
+            <td>Google Firebase (رمز جهاز مجهول)</td>
+        </tr>
+        <tr>
+            <td>بيانات الأعطال التشخيصية</td>
+            <td>تلقائيًا بواسطة نظام Android عند حدوث عطل</td>
+            <td>تحسين استقرار التطبيق</td>
+            <td>Google Play Console (مُجمَّعة)</td>
+        </tr>
+        <tr>
+            <td>محتوى إعلانات الصيدلية</td>
+            <td>يُجلب من قاعدة بيانات Firestore</td>
+            <td>عرض المحتوى داخل التطبيق</td>
+            <td>Google Firestore (قراءة فقط للعميل)</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<p>نحن <strong>لا نجمع</strong> اسمك أو رقم هاتفك أو موقعك أو جهات اتصالك أو صورك أو أي معلومات تعريفية أخرى من تطبيق العميل.</p>
+
+<h3>٣. تطبيق الإدارة (منفصل)</h3>
+<p>يوجد تطبيق منفصل «بازيد — الإدارة» مخصص لطاقم الصيدلية، يتطلب تسجيل الدخول بالبريد الإلكتروني وكلمة المرور عبر Firebase Authentication. تُعالج هذه البيانات فقط للمصادقة على الموظفين المخوّلين، ولا تُشارك مع أي طرف ثالث خارج Google كمزود البنية التحتية لدينا.</p>
+
+<h3>٤. الأذونات المستخدمة</h3>
+<ul>
+    <li><strong>POST_NOTIFICATIONS</strong> — لإيصال إعلانات الصيدلية كإشعارات. يمكنك إلغاء هذا الإذن من إعدادات جهازك في أي وقت.</li>
+</ul>
+
+<h3>٥. خدمات الطرف الثالث</h3>
+<p>نستخدم Google Firebase (Cloud Messaging وFirestore وAuthentication للإدارة) كبنية تحتية للتطبيق. تُعالج Firebase البيانات وفق سياسات Google: <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a></p>
+
+<h3>٦. خصوصية الأطفال</h3>
+<p>التطبيق مخصص لمن يبلغون ١٣ عامًا فأكثر. لا نجمع بيانات الأطفال دون هذا السن عن قصد.</p>
+
+<h3>٧. مدة الاحتفاظ بالبيانات</h3>
+<ul>
+    <li>تظل رموز FCM محفوظة طالما التطبيق مثبت والإذن ممنوح؛ يُلغى الرمز فور إلغاء تثبيت التطبيق.</li>
+    <li>تظل بيانات حسابات الإدارة محفوظة حتى يحذفها فريق الصيدلية.</li>
+</ul>
+
+<h3>٨. حقوقك</h3>
+<p>يمكنك طلب حذف أي بيانات تخصك (حسابات إدارة، رموز FCM) بمراسلتنا على <strong><a href="mailto:mahmoudmabrok3579@gmail.com">mahmoudmabrok3579@gmail.com</a></strong>، وسنرد خلال ٣٠ يومًا.</p>
+
+<h3>٩. التعديلات على هذه السياسة</h3>
+<p>قد نُحدّث هذه السياسة بتطوّر التطبيق. سيُعكس أي تغيير في تاريخ «آخر تحديث» أعلاه. استمرار استخدامك للتطبيق يعني قبولك للسياسة المُحدّثة.</p>
+
+<h3>١٠. التواصل</h3>
+<p>لأي استفسار أو طلب: <strong><a href="mailto:mahmoudmabrok3579@gmail.com">mahmoudmabrok3579@gmail.com</a></strong>.</p>
+
+</section>
+
+</main>
+</body>
+</html>
