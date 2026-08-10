@@ -97,6 +97,7 @@ playlists = [
     {"id": "PLnpYU8_AiEPfiGot0mRagoWYrQ55rwcac",   "title": "مميزات الخطاب القرآني وطريقته في تقرير العقائد"},
     {"id": "PLnpYU8_AiEPe3HVGx3Kp7o_gk2mMalh5M",   "title": "مساق (الدليل إلى القرآن)"},
     {"id": "PLnpYU8_AiEPeb8Sod6Ltr7mpawOnnQsWK",   "title": "خطب الجمعة | د أحمد عبد المنعم"},
+    {"id": "PLAvNNkZLQQSc5XW4mOTUG4VgHuXw_4STU",   "title": "Quran for kids | جزء عم للأطفال"},
 ]
 
 output_dir = 'playlists'
